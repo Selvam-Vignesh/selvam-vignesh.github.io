@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vignesh Selvam — CAD Models</title>
+
+  <!-- Shared site CSS -->
+  <link rel="stylesheet" href="assets/css/site.css" />
+
+  <!-- 3D model viewer (rotate/zoom) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body data-theme="light">
+
+  <!-- Top menu -->
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <a href="index.html">Vignesh Selvam</a>
+      </div>
+
+      <div class="menu" role="navigation" aria-label="Main">
+        <a href="index.html">About</a>
+
+        <div class="dropdown" id="photoDropdown" aria-expanded="false">
+          <button type="button" id="photoBtn">
+            Photographs <span aria-hidden="true">▾</span>
+          </button>
+          <div class="dropdown-panel" id="photoPanel">
+            <a href="photography.html#landscape">Landscape</a>
+            <a href="photography.html#portrait">Portrait</a>
+            <a href="photography.html#wildlife">Wildlife</a>
+            <a href="photography.html#cityscape">Cityscape</a>
+          </div>
+        </div>
+
+        <a href="cad.html" class="active">CAD Models</a>
+        <a href="graphics.html">Graphic Designs</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Contact</a>
+
+        <button class="toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          🌙 / ☀️
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h1>CAD Models</h1>
+      <p class="muted">
+        Tip: export your CAD as <b>.glb</b> and place it in <code>assets/models/</code>.
+        Then update the <code>src</code> paths below.
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- =========================
+         3D MODEL SECTION (GLB)
+         ========================= -->
+    <section class="card">
+      <h2>Dynamic Helical Mixer (3D)</h2>
+      <p class="muted">
+        Interactive model (rotate, zoom, pan). Replace <code>assets/models/dogbonetraction.glb</code> with your file.
+      </p>
+
+      <model-viewer
+        src="assets/models/dogbonetraction.glb"
+        alt="Dynamic Helical Mixer CAD model"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        style="width:100%; height:420px; border-radius:14px; border:1px solid var(--line); background: var(--bg);">
+      </model-viewer>
+
+      <div class="divider"></div>
+
+      <div class="grid">
+        <div class="card" style="box-shadow:none">
+          <h3>What it is</h3>
+          <p class="muted">
+            One-line explanation of the part (e.g., active mixing element for DIW two-part silicone/MRE inks).
+          </p>
+        </div>
+        <div class="card" style="box-shadow:none">
+          <h3>Tools</h3>
+          <p class="muted">SolidWorks / Fusion 360 / Blender</p>
+        </div>
+        <div class="card" style="box-shadow:none">
+          <h3>Downloads</h3>
+          <p class="muted">
+            <a href="assets/models/dogbonetraction.glb" download>Download GLB</a>
+            <br />
+            <a href="#" target="_blank" rel="noopener">Project notes (PDF)</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- =========================
+         STATIC CAD GALLERY
+         ========================= -->
+    <section class="card">
+      <h2>CAD Gallery (Images)</h2>
+      <p class="muted">
+        Add screenshots/renders to <code>assets/images/cad/</code> and update the image paths.
+      </p>
+
+      <div class="grid">
+        <div class="thumb">
+          <img src="assets/images/cad/cad_01.jpg" alt="CAD render 01" />
+          <span class="label">Mixer Assembly</span>
+        </div>
+        <div class="thumb">
+          <img src="assets/images/cad/cad_02.jpg" alt="CAD render 02" />
+          <span class="label">Nozzle + Needle</span>
+        </div>
+        <div class="thumb">
+          <img src="assets/images/cad/cad_03.jpg" alt="CAD render 03" />
+          <span class="label">Printhead Concept</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- =========================
+         LIST OF PROJECTS (EDITABLE)
+         ========================= -->
+    <section class="card">
+      <h2>Projects</h2>
+      <p class="muted">Quick list you can keep updating.</p>
+
+      <div class="divider"></div>
+
+      <div class="card" style="box-shadow:none">
+        <h3>Project 01 — Active-Mixing DIW Printhead</h3>
+        <p class="muted">
+          Short description (2–3 lines). Add links to files, papers, or images.
+        </p>
+        <p class="muted">
+          Files:
+          <a href="#" target="_blank" rel="noopener">PDF</a> •
+          <a href="#" target="_blank" rel="noopener">STEP</a> •
+          <a href="#" target="_blank" rel="noopener">STL</a>
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="card" style="box-shadow:none">
+        <h3>Project 02 — Specimen Mould / Fixture</h3>
+        <p class="muted">
+          Short description. Mention dimensions, material, purpose.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Vignesh Selvam
+    </footer>
+  </main>
+
+  <!-- Shared JS (dropdown + theme toggle) -->
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
+

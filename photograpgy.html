@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vignesh Selvam — Photography</title>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body data-theme="light">
+
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span><a href="index.html">Vignesh Selvam</a></div>
+
+      <div class="menu">
+        <a href="index.html">About</a>
+
+        <div class="dropdown" id="photoDropdown" aria-expanded="false">
+          <button type="button" id="photoBtn" style="border-color:var(--line); background:var(--card);">
+            Photographs <span>▾</span>
+          </button>
+          <div class="dropdown-panel" id="photoPanel">
+            <a href="#landscape">Landscape</a>
+            <a href="#portrait">Portrait</a>
+            <a href="#wildlife">Wildlife</a>
+            <a href="#cityscape">Cityscape</a>
+          </div>
+        </div>
+
+        <a href="cad.html">CAD Models</a>
+        <a href="graphics.html">Graphic Designs</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html">Contact</a>
+
+        <button class="toggle" id="themeToggle" type="button">🌙 / ☀️</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="card">
+      <h1>Photography</h1>
+      <p class="muted">Put your images inside assets/images/photography/</p>
+    </section>
+
+    <h2 id="landscape">Landscape</h2>
+    <div class="grid">
+      <div class="thumb"><span class="label">Landscape 01</span></div>
+      <div class="thumb"><span class="label">Landscape 02</span></div>
+      <div class="thumb"><span class="label">Landscape 03</span></div>
+    </div>
+
+    <h2 id="portrait">Portrait</h2>
+    <div class="grid">
+      <div class="thumb"><span class="label">Portrait 01</span></div>
+      <div class="thumb"><span class="label">Portrait 02</span></div>
+      <div class="thumb"><span class="label">Portrait 03</span></div>
+    </div>
+
+    <h2 id="wildlife">Wildlife</h2>
+    <div class="grid">
+      <div class="thumb"><span class="label">Wildlife 01</span></div>
+      <div class="thumb"><span class="label">Wildlife 02</span></div>
+      <div class="thumb"><span class="label">Wildlife 03</span></div>
+    </div>
+
+    <h2 id="cityscape">Cityscape</h2>
+    <div class="grid">
+      <div class="thumb"><span class="label">Cityscape 01</span></div>
+      <div class="thumb"><span class="label">Cityscape 02</span></div>
+      <div class="thumb"><span class="label">Cityscape 03</span></div>
+    </div>
+
+    <footer>© <span id="year"></span> Vignesh Selvam</footer>
+  </main>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
